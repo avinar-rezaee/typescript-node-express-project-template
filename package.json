@@ -1,0 +1,26 @@
+{
+  "name": "typescript-node-express-project-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "npm i && tsc && npx pm2 delete dist/ecosystem.config.js && npx pm2 start dist/ecosystem.config.js"
+  },
+  "author": "avinarrezaee",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "express-query-parser": "^1.3.3",
+    "ip": "^1.1.8",
+    "pm2": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/ip": "^1.1.3",
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  }
+}
